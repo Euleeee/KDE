@@ -12,7 +12,10 @@
     </div>
     
     <div id="button-container">
-        <app-big-blue-button [Text]="'JA'" class="buttons" (click)="newCustomer()"></app-big-blue-button>
+        <app-big-blue-button [Text]="'JA'" class="buttons" (click)="newCustomer()" [routerLink]="'/new-customer'"></app-big-blue-button>
         <app-big-blue-button [Text]="'NEIN'" class="buttons" (click)="existingCustomer()"></app-big-blue-button>
     </div>
+    <router-outlet></router-outlet>
 </body>
+
+

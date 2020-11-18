@@ -14,13 +14,15 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { BigBlueButtonComponent } from './big-blue-button/big-blue-button.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { NewCustomerComponent } from './new-customer/new-customer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestcomponentComponent,
     BigBlueButtonComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    NewCustomerComponent
   ],
   imports: [
     BrowserModule,
