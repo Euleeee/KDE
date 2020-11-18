@@ -1,0 +1,13 @@
+:host {
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    position: relative; 
+    background-color: white;
+}
