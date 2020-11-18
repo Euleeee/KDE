@@ -1,5 +1,13 @@
 <body>
     <div>
-        TEST
+        <app-customer-data *ngFor="let customer of customerList"
+            [firstName]="customer.firstName"
+            [lastName]="customer.lastName"
+            [mail]="customer.mail"
+            [phone]="customer.phone"
+            [exists]="customer.exists"
+            [notifies]="customer.notifies"
+        >
+        </app-customer-data>
     </div>
 </body>

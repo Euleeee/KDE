@@ -6,15 +6,18 @@ import { AppComponent } from './app.component';
 import { TestcomponentComponent } from './testcomponent/testcomponent.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatDividerModule} from '@angular/material/divider';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatInputModule} from '@angular/material/input';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { BigBlueButtonComponent } from './big-blue-button/big-blue-button.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { NewCustomerComponent } from './new-customer/new-customer.component';
+import { ExistingCustomerComponent } from './existing-customer/existing-customer.component';
+import { CustomerDataComponent } from './customer-data/customer-data.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { NewCustomerComponent } from './new-customer/new-customer.component';
     TestcomponentComponent,
     BigBlueButtonComponent,
     WelcomeComponent,
-    NewCustomerComponent
+    NewCustomerComponent,
+    ExistingCustomerComponent,
+    CustomerDataComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,8 @@ import { NewCustomerComponent } from './new-customer/new-customer.component';
     MatDialogModule,
     MatInputModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
