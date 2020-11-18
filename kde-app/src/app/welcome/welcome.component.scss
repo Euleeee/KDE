@@ -1,0 +1,53 @@
+body {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 175%;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+#restaurant {
+    text-align: center;
+    font-size: 200%;
+}
+
+#question {
+    text-align: center;
+    font-size: 400%;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    line-height: normal;
+}
+
+#button-container {
+    text-align: center;
+    margin-bottom: 5em;
+
+    .buttons {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    #welcome {
+        font-size: 125%;
+        margin-top: 5%;
+        margin-bottom: 1.5em;
+    }
+    
+    #restaurant {
+        font-size: 150%;
+    }
+    
+    #question {
+        font-size: 250%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+  }

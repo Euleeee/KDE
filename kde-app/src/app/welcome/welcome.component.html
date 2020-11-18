@@ -1,0 +1,18 @@
+<body>
+    <div id="welcome">
+        Herzlich willkommen bei
+    </div>
+    
+    <div id="restaurant">
+        {{ restaurant }}
+    </div>
+    
+    <div id="question">
+        Ist dies Ihr erster Besuch?
+    </div>
+    
+    <div id="button-container">
+        <app-big-blue-button [Text]="'JA'" class="buttons" (click)="newCustomer()"></app-big-blue-button>
+        <app-big-blue-button [Text]="'NEIN'" class="buttons" (click)="existingCustomer()"></app-big-blue-button>
+    </div>
+</body>
