@@ -1,0 +1,110 @@
+@import "../../styles/global.scss";
+
+#accept {
+    font-size: x-large;
+    padding-left: 31%;
+    padding-top: 2%;
+    
+}
+
+#notify {
+    max-width: 39%;
+    float: left;
+    padding-left: 31%;
+    padding-top: 2%;
+    color: #404040;
+    font-size: x-large;
+    
+}
+
+#navigation {
+    float: left;
+    padding-left: 31%;
+    padding-top: 1.5%;
+    clear: both;
+
+    width: 40%;
+    text-align: center;
+}
+
+#back {
+    float: left;
+}
+
+#forward {
+    float: right;
+    padding-right: 5%;
+}
+
+.mat-divider {
+    border-top-color: black;
+}
+
+.divider {
+    float: left;
+    width: 40%;
+    padding-left: 30%;
+    clear: both; 
+    padding-top: 1.3%; 
+    //padding-bottom: 1.5%;
+}
+
+.divider:last-child {
+    float: left;
+    width: 40%;
+    padding-left: 30%;
+    clear: both; 
+    padding-top: 2.3%; 
+    padding-bottom: 1.5%;
+}
+
+mat-checkbox ::ng-deep .mat-checkbox-inner-container {
+    width: 20px;
+    height: 20px;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
+    opacity: 0.03 !important;
+    background-color: $primary-blau!important;
+  }
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: $primary-blau;
+  }
+
+::ng-deep .mat-checkbox.mat-accent .mat-checkbox-ripple .mat-ripple-element {
+        background-color: $primary-blau!important;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    #accept {
+        font-size: large;
+        padding-left: 10%;
+        padding-top: 2%;
+        padding-bottom: 1%;
+    }
+
+    #navigation {
+        float: left;
+        padding-left: 11.5%;
+        clear: both;
+    
+        width: 80%;
+        text-align: center;
+    }
+
+    #notify {
+        max-width: 79%;
+        padding-left: 11.5%;
+        font-size: large;
+    }
+    
+    .divider {
+        width: 80%;
+        padding-left: 10%; 
+        padding-top: 2%; 
+    }
+    
+}
