@@ -1,5 +1,10 @@
-# KDE
-Read me..
-KDE = Kontaktdatenerfassung
+# KDE (Kontaktdatenerfassung)
 
-TEST von Bayerle
+Dies ist der für das Fach Mensch-Maschine-Systeme entwickelte
+Prototyp für die Kontaktdatenfassung in Restaurants in Zeiten von Corona.
+
+
+# Anleitung (Starten der Website)
+
+1. 
+2. 
