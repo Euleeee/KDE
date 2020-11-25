@@ -4,12 +4,12 @@ button {
     color: white;
     background-color: $primary-blau;
     box-sizing: border-box;
-    width: 300px;
-    height: 160px;
-    font-size: 300%;
+    //width: 300px;
+    height: 50px;
+    font-size: 175%;
     text-align: center;
-    border-radius: 20px !important;
-    white-space: pre-wrap !important;
+    border-radius: 10px !important;
+    
 }
 
 
@@ -19,10 +19,9 @@ button {
         color: white;
         background-color: $primary-blau;
         box-sizing: border-box;
-        width: 100px;
-        height: 50px;
+        //width: 100px;
+        height: 40px;
         font-size: 100%;
         border-radius: 5px !important;
-        line-height: normal;
     }
 }

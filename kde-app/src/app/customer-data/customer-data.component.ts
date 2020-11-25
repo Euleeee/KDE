@@ -9,6 +9,7 @@ export class CustomerDataComponent implements OnInit {
 
   constructor() { }
 
+  @Input() number;
   @Input() firstName;
   @Input() lastName;
   @Input() mail;

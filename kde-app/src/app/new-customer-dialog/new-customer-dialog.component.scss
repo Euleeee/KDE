@@ -1,0 +1,23 @@
+#container {
+    text-align: center;
+}
+
+.text {
+    font-size: x-large;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.button {
+    padding-bottom: 8%;
+}
+
+.cdk-overlay-pane.my-dialog {
+    position: relative!important;
+}
+
+.close.mat-button {
+    float: right;
+    top:-24px;
+    right:-24px;
+}
