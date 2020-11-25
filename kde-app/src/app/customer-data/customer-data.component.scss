@@ -1,11 +1,11 @@
 @import "../../styles/global.scss";
 
-#container {
-    /* position: absolute;
+/* #container {
+    position: absolute;
     width: 800px;
     left: 50%;
-    margin: 0 0 0 -400px; */
-}
+    margin: 0 0 0 -400px;
+} */
 
 #number {
     font-size: x-large;
@@ -49,15 +49,6 @@
     padding-top: 7%;
     color: #404040;
     font-size: x-large;
-
-    .checkbox {
-    //margin-right: 20px !important;
-    //font-size: x-large;
-    }
-
-    .mat-icon {
-        //scale: 1.5;
-    }
     
 }
 
@@ -112,22 +103,11 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
     }
     
     #notify {
-        
         font-size: large;
-
-        .checkbox {
-        //font-size: large;
-        }
-    
-        .mat-icon {
-            //scale: 1.5;
-        }
-        
     }
 
     #number {
         font-size: large;
-
     }
 
 }

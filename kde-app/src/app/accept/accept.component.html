@@ -1,0 +1,35 @@
+<div id="container">
+
+    <div id="accept">
+        Ich akzeptiere
+    </div>
+    
+    <div class="divider">
+        <mat-divider></mat-divider>
+    </div>
+
+    <div id="notify">
+        <mat-checkbox class="checkbox"></mat-checkbox>
+        Die Datenschutzrichtlinien und die Corona-Meldepflicht          
+    </div>
+
+    <div id="notify">
+        <mat-checkbox class="checkbox"></mat-checkbox>
+        Die Pflicht meine Begleitpersonen im Corona-Fall zu informieren          
+    </div>
+
+    <div class="divider">
+        <mat-divider></mat-divider>
+    </div>
+
+    <div id="navigation">
+        <div id="back">
+            <app-small-blue-button [Text]="'Zurück'" (click)="back()"></app-small-blue-button>
+        </div>
+
+        <div id="forward">
+            <app-small-blue-button [Text]="'Weiter'" [routerLink]="'/accept'"></app-small-blue-button>
+        </div>
+    </div>
+</div>
+
