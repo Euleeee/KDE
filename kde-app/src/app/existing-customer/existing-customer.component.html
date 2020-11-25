@@ -1,1 +1,39 @@
-<p>existing-customer works!</p>
+<body>
+    <div id="prompt">
+        Bitte tragen Sie ihre Kontaktdaten ein
+    </div>
+
+    <div id="container">
+        <app-customer-data *ngFor="let customer of customerList; index as i" class="form"
+            [number]="i + 1"
+            [firstName]="customer.firstName"
+            [lastName]="customer.lastName"
+            [mail]="customer.mail"
+            [phone]="customer.phone"
+            [exists]="customer.exists"
+            [notifies]="customer.notifies"
+        >
+        </app-customer-data>
+    </div>
+
+    <div id="add">
+        <app-small-blue-button [Text]="'+ Person hinzufügen'" (click)="addCustomer()"></app-small-blue-button>
+    </div>
+
+    <div class="divider">
+        <mat-divider></mat-divider>
+    </div>
+
+    <div id="navigation">
+        <div id="back">
+            <app-small-blue-button [Text]="'Zurück'" (click)="back()"></app-small-blue-button>
+        </div>
+
+        <div id="forward">
+            <app-small-blue-button [Text]="'Weiter'" (click)="addCustomer()"></app-small-blue-button>
+        </div>
+    </div>
+
+    
+    
+</body>

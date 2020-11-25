@@ -18,6 +18,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { NewCustomerComponent } from './new-customer/new-customer.component';
 import { ExistingCustomerComponent } from './existing-customer/existing-customer.component';
 import { CustomerDataComponent } from './customer-data/customer-data.component';
+import { SmallBlueButtonComponent } from './small-blue-button/small-blue-button.component';
+import { NewCustomerDialogComponent } from './new-customer-dialog/new-customer-dialog.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { CustomerDataComponent } from './customer-data/customer-data.component';
     WelcomeComponent,
     NewCustomerComponent,
     ExistingCustomerComponent,
-    CustomerDataComponent
+    CustomerDataComponent,
+    SmallBlueButtonComponent,
+    NewCustomerDialogComponent
   ],
   imports: [
     BrowserModule,
