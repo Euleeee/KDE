@@ -13,7 +13,7 @@
 }
 
 :host ::ng-deep .begin button {
-        background-color: #8faadc;
+    background-color: #8faadc;
 }
 
 :host ::ng-deep .end button {
@@ -29,4 +29,13 @@
     float: right;
     top:-24px;
     right:-24px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    :host ::ng-deep .begin button {
+        background-color: #8faadc;
+        width: 120px;
+    }
+
 }
