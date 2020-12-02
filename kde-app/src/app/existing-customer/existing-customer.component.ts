@@ -61,6 +61,14 @@ export class ExistingCustomerComponent implements OnInit {
     });
   }
 
+  removeCustomer(indexNumber): void {
+    const index: number = indexNumber -1;
+
+    if (index > 0) {
+      this.customerList.splice(index, 1);
+    }
+  }
+
   back() {
     if (confirm("Möchten Sie wirklich zurück? \nAlle eingegebenen Daten gehen verloren!")) {
       this.router.navigate(['']);

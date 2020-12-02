@@ -12,6 +12,7 @@
             [phone]="customer.phone"
             [exists]="customer.exists"
             [notifies]="customer.notifies"
+            (removeEvent)="removeCustomer($event)"
         >
         </app-customer-data>
     </div>

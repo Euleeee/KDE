@@ -60,6 +60,7 @@
 
             <div id="number">
                 <div class="person">Person {{ number }}</div>
+                <button class="close" mat-button (click)="removePerson()">Person Entfernen</button>
                 <div *ngIf="isRegistered" class="registered">Person gefunden</div>
             </div>
             
