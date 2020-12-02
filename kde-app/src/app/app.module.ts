@@ -24,6 +24,7 @@ import { AcceptComponent } from './accept/accept.component';
 import { LoggedInComponent } from './logged-in/logged-in.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EmployeesDialogComponent } from './employees-dialog/employees-dialog.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { EmployeesDialogComponent } from './employees-dialog/employees-dialog.co
     AcceptComponent,
     LoggedInComponent,
     EmployeesComponent,
-    EmployeesDialogComponent
+    EmployeesDialogComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

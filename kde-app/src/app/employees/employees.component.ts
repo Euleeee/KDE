@@ -13,6 +13,9 @@ export class EmployeesComponent implements OnInit {
 
   constructor(public router: Router, public dialog: MatDialog,) { }
 
+  name: string;
+  password: string;
+
   ngOnInit(): void {
   }
 
@@ -21,14 +24,31 @@ export class EmployeesComponent implements OnInit {
   }
 
   forward() {
-    const dialogRef = this.dialog.open(EmployeesDialogComponent, {
-      width: '500px',
-      panelClass: 'my-dialog',
-    });
 
-    dialogRef.afterClosed().subscribe(result => {
-    });
+    if (this.name === 'Max' && this.password === '1234') {
+      const dialogRef = this.dialog.open(EmployeesDialogComponent, {
+        width: '500px',
+        panelClass: 'my-dialog',
+      });
+  
+      
+      dialogRef.afterClosed().subscribe(result => {
+      });
+    }
+
+    if (this.name === 'Admin' && this.password === 'admin') {
+      this.router.navigate(['admin']);
+    }
     
+    
+  }
+
+  setName(name) {
+    this.name = name;
+  }
+
+  setPassword(password) {
+    this.password = password;
   }
   
 
