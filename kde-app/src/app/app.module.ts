@@ -21,6 +21,7 @@ import { CustomerDataComponent } from './customer-data/customer-data.component';
 import { SmallBlueButtonComponent } from './small-blue-button/small-blue-button.component';
 import { NewCustomerDialogComponent } from './new-customer-dialog/new-customer-dialog.component';
 import { AcceptComponent } from './accept/accept.component';
+import { LoggedInComponent } from './logged-in/logged-in.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AcceptComponent } from './accept/accept.component';
     CustomerDataComponent,
     SmallBlueButtonComponent,
     NewCustomerDialogComponent,
-    AcceptComponent
+    AcceptComponent,
+    LoggedInComponent
   ],
   imports: [
     BrowserModule,
