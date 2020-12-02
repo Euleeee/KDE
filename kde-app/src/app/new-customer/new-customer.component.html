@@ -2,7 +2,7 @@
     <div id="prompt">
         Bitte tragen Sie ihre Kontaktdaten ein
     </div>
-
+    
     <div id="container">
         <app-customer-data *ngFor="let customer of customerList; index as i" class="form"
             [number]="i + 1"
@@ -12,6 +12,7 @@
             [phone]="customer.phone"
             [exists]="customer.exists"
             [notifies]="customer.notifies"
+            (removeEvent)="removeCustomer($event)"
         >
         </app-customer-data>
     </div>
@@ -26,7 +27,8 @@
 
     <div id="navigation">
         <div id="back">
-            <app-small-blue-button [Text]="'Zurück'" (click)="back()"></app-small-blue-button>
+            <!--<app-small-blue-button [Text]="'Abbrechen'" (click)="back()"></app-small-blue-button> -->
+            <app-small-blue-button [Text]="'Abbrechen'" (click)="back()"></app-small-blue-button>
         </div>
 
         <div id="forward">

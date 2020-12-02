@@ -118,6 +118,11 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
     
 }
 
+.close.mat-button {
+    top: 0px;
+    right: -30%;
+}
+
 @media only screen and (max-width: 800px) {
     .mat-form-field {
         font-size: large;

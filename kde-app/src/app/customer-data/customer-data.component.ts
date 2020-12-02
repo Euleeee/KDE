@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-customer-data',
@@ -24,6 +24,16 @@ export class CustomerDataComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.firstName);
+  }
+
+  
+  @Output() removeEvent = new EventEmitter();
+  
+  removePerson() {
+    
+    console.log(this.number)
+    /**this.removeCustomer(this.number)*/
+    this.removeEvent.emit(this.number)
   }
 
   mandatory(source) {
