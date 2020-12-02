@@ -1,0 +1,32 @@
+#container {
+    text-align: center;
+}
+
+.begin {
+    padding-top: 15%;
+    padding-bottom: 8%;
+}
+
+.end {
+    padding-top: 15%;
+    padding-bottom: 8%;
+}
+
+:host ::ng-deep .begin button {
+        background-color: #8faadc;
+}
+
+:host ::ng-deep .end button {
+    background-color: #ed7c31;
+}
+
+
+.cdk-overlay-pane.my-dialog {
+    position: relative!important;
+}
+
+.close.mat-button {
+    float: right;
+    top:-24px;
+    right:-24px;
+}

@@ -1,0 +1,46 @@
+<div id="container">
+    
+    <div class="divider">
+        <mat-divider></mat-divider>
+    </div>
+
+    <div id="content">
+
+        <form class="user-data-form">
+
+            <div>
+                <mat-form-field class="full-width">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="z.B. Max">
+                    <mat-hint>Pflichtfeld</mat-hint>
+                </mat-form-field>
+            </div>    
+                
+            <div>
+                <mat-form-field appearance="fill" class="full-width">
+                    <mat-label>Passwort</mat-label>
+                    <input matInput [type]="'password'">
+                </mat-form-field>
+            </div>
+    
+        </form>
+
+    </div>
+    
+    
+
+    <div class="divider">
+        <mat-divider></mat-divider>
+    </div>
+
+    <div id="navigation">
+        <div id="back">
+            <app-small-blue-button [Text]="'Zurück'" (click)="back()"></app-small-blue-button>
+        </div>
+
+        <div id="forward">
+            <app-small-blue-button [Text]="'Anmelden'" (click)="forward()"></app-small-blue-button>
+        </div>
+    </div>
+</div>
+

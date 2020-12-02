@@ -22,6 +22,8 @@ import { SmallBlueButtonComponent } from './small-blue-button/small-blue-button.
 import { NewCustomerDialogComponent } from './new-customer-dialog/new-customer-dialog.component';
 import { AcceptComponent } from './accept/accept.component';
 import { LoggedInComponent } from './logged-in/logged-in.component';
+import { EmployeesComponent } from './employees/employees.component';
+import { EmployeesDialogComponent } from './employees-dialog/employees-dialog.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { LoggedInComponent } from './logged-in/logged-in.component';
     SmallBlueButtonComponent,
     NewCustomerDialogComponent,
     AcceptComponent,
-    LoggedInComponent
+    LoggedInComponent,
+    EmployeesComponent,
+    EmployeesDialogComponent
   ],
   imports: [
     BrowserModule,

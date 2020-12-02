@@ -34,6 +34,15 @@ body {
     
 }
 
+#employees {
+    position:relative;
+    a {
+        position:absolute;
+        bottom:0;
+        right:0;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     #welcome {
         font-size: 125%;
