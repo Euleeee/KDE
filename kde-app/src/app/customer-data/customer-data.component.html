@@ -27,16 +27,16 @@
             <div>
                 <mat-form-field class="full-width">
                     <mat-label>E-Mail-Adresse</mat-label>
-                    <input matInput placeholder="z.B. max-mustermann@web.de" value={{mail}}>
-                    <mat-hint>Pflichtfeld</mat-hint>
+                    <input matInput placeholder="z.B. max-mustermann@web.de" value={{mail}} [(ngModel)]="mail" [ngModelOptions]="{standalone: true}" (keyup)="mandatory('mail')">
+                    <mat-hint *ngIf="!isPhone">Pflichtfeld</mat-hint>
                 </mat-form-field>
             </div>
             
             <div>
                 <mat-form-field class="full-width">
                     <mat-label>Telefonnummer</mat-label>
-                    <input matInput placeholder="z.B. 07131/123456" value={{phone}}>
-                    <mat-hint>Pflichtfeld</mat-hint>
+                    <input matInput placeholder="z.B. 07131/123456" value={{phone}} [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" (keyup)="mandatory('phone')">
+                    <mat-hint *ngIf="!isMail">Pflichtfeld</mat-hint>
                 </mat-form-field>
             </div>
 
@@ -55,21 +55,26 @@
 
         <form class="user-data-form">
 
-            <div id="number">Person {{ number }}</div>
+            <div id="number">
+                <div class="person">Person {{ number }}</div>
+                <div *ngIf="isRegistered" class="registered">Person gefunden</div>
+            </div>
+            
+            
         
             <div>
-                <mat-form-field class="full-width">
+                <mat-form-field class="medium-width">
                     <mat-label>E-Mail-Adresse</mat-label>
-                    <input matInput placeholder="z.B. max-mustermann@web.de" value={{mail}}>
-                    <mat-hint>Pflichtfeld</mat-hint>
+                    <input matInput placeholder="z.B. max-mustermann@web.de" value={{mail}} [(ngModel)]="mail" [ngModelOptions]="{standalone: true}" (keyup)="mandatory('mail')">
+                    <mat-hint *ngIf="!isPhone">Pflichtfeld</mat-hint>
                 </mat-form-field>
             </div>
             
             <div>
-                <mat-form-field class="full-width">
+                <mat-form-field class="medium-width">
                     <mat-label>Telefonnummer</mat-label>
-                    <input matInput placeholder="z.B. 07131/123456" value={{phone}}>
-                    <mat-hint>Pflichtfeld</mat-hint>
+                    <input matInput placeholder="z.B. 07131/123456" value={{phone}} [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" (keyup)="mandatory('phone')">
+                    <mat-hint *ngIf="!isMail">Pflichtfeld</mat-hint>
                 </mat-form-field>
             </div>
 

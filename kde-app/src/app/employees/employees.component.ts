@@ -42,14 +42,6 @@ export class EmployeesComponent implements OnInit {
     
     
   }
-
-  setName(name) {
-    this.name = name;
-  }
-
-  setPassword(password) {
-    this.password = password;
-  }
-  
+ 
 
 }

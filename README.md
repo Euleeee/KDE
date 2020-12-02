@@ -12,5 +12,3 @@ Prototyp für die Kontaktdatenfassung in Restaurants in Zeiten von Corona.
 
 TODO:
 Info bei hover auf i icon
-Grüner Haken, wenn Nutzer gefunden
-Pflichtfeld verschwindet beim jeweils anderen, wenn email oder telefonnumer eingetragen

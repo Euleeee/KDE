@@ -8,12 +8,29 @@
 } */
 
 #number {
-    font-size: x-large;
-    // padding-top: 3%;
-    color: #404040;
+    display: flex;
+
+    .person {
+        font-size: x-large;
+        // padding-top: 3%;
+        color: #404040;
+        flex: 0 0 40%;
+    }
+    
+    .registered {
+        display: inline-block;
+        font-size: large;
+        color: #a9d18e;
+        flex: 1;
+    }
+
+    
 }
 
+
+
 #names {
+    
     display: inline-block;
     min-width: 150px;
     max-width: 700px;
@@ -43,6 +60,10 @@
 
 .half-width {
     width: 45%;
+}
+
+.medium-width {
+    width: 70%
 }
 
 #notify {

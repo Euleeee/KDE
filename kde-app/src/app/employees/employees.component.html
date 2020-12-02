@@ -11,7 +11,7 @@
             <div>
                 <mat-form-field class="full-width">
                     <mat-label>Name</mat-label>
-                    <input matInput #name placeholder="z.B. Max" (keyup.enter)="setName(name.value)">
+                    <input matInput placeholder="z.B. Max" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
                     <mat-hint>Pflichtfeld</mat-hint>
                 </mat-form-field>
             </div>    
@@ -19,7 +19,8 @@
             <div>
                 <mat-form-field appearance="fill" class="full-width">
                     <mat-label>Passwort</mat-label>
-                    <input matInput #password [type]="'password'" (keyup.enter)="setPassword(password.value)">
+                    <input matInput [type]="'password'" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+                    <mat-hint>Pflichtfeld</mat-hint>
                 </mat-form-field>
             </div>
     

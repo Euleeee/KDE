@@ -9,6 +9,10 @@ export class CustomerDataComponent implements OnInit {
 
   constructor() { }
 
+  isMail: boolean = false;
+  isPhone: boolean = false;
+  isRegistered: boolean = false;
+
   @Input() number;
   @Input() firstName;
   @Input() lastName;
@@ -22,4 +26,37 @@ export class CustomerDataComponent implements OnInit {
     console.log(this.firstName);
   }
 
+  mandatory(source) {
+
+    if (source === 'mail') {
+      if (this.mail === '') {
+        this.isMail = false;
+      }
+      else {
+        this.isMail = true;
+      }
+
+      if(this.mail === 'max-mustermann@web.de') {
+        this.isRegistered = true;
+      }
+
+    }
+
+    if (source === 'phone') {
+      if (this.phone === '') {
+        this.isPhone = false;
+      }
+      else {
+        this.isPhone = true;
+      }
+
+      if(this.phone === '07131/123456' || this.phone === '07131123456') {
+        this.isRegistered = true;
+      }
+
+    }
+
+
+
+  }
 }
