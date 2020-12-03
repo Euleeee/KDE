@@ -67,6 +67,9 @@ export class NewCustomerComponent implements OnInit {
     if (index > 0) {
       this.customerList.splice(index, 1);
     }
+    else if (index === 0 && this.customerList.length > 1) {
+      this.customerList.splice(index, 1);
+    }
   }
 
 
